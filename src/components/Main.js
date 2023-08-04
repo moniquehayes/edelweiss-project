@@ -2,6 +2,8 @@ import React, {useEffect} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCatalogAsync, selectCatalog } from '../store/catalogSlice';
 import axios from 'axios';
+import catalogData from '../catalog-data';
+
 
 
 const Main = () => {
@@ -9,12 +11,13 @@ const Main = () => {
 // THEN just pull the products from that state. 
 
 // map over each to create a card component for every product
-    const dispatch = useDispatch();
-    const catalog = useSelector(selectCatalog);
+    // const dispatch = useDispatch();
+    // const catalog = useSelector(selectCatalog);
 
-    const products = catalog.products;
-    console.log(catalog)
+    // const products = catalog.products;
+    // console.log(catalog)
 
+    const products = catalogData.products;
 
     return (
         <div>
