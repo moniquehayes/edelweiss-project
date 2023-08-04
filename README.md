@@ -1,7 +1,7 @@
 # Edelwiess Catalog Viewer
 
 Thank you for your time and consideration with this assingment!
-This repo can be viewed on a browser at http://localhost:3000
+This repo can be viewed on a browser at http://localhost:3000 after running the start script.
 
 ## Tech Stack: 
     - React
