@@ -3,7 +3,11 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 export const fetchCatalogAsync = createAsyncThunk("catalog", async () => {
     try {
-
+        const {data} = await axios({
+            method: 'get',
+            url: 'https://api.edelweiss.plus/api/v2/catalogs/3843/products?productProperties=images'
+        });
+        return data;
     } catch (err) {
         console.error(err)
     }
